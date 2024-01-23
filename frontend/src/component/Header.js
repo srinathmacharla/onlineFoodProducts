@@ -59,22 +59,27 @@ function Header() {
            </div>
            {
             showMenu && (
-           <div className="absolute right-2 bg-white py-2  shadow drop-shadow-md flex flex-col min-w-[120px] text-center">
-                {
-                  userData.email === process.env.REACT_APP_ADMIN_EMAIL && <Link to={"NewProducts"} className='whitespace-nowrap cursor-pointer px-2'>New Product</Link>
-                }
-        
-                 {
-                  userData.image ? <p className="cursor-pointer text-white px-2 bg-red-500" onClick={handleLogout}>Logout ({userData.firstName})</p> : <Link to={"Login"} className='whitespace-nowrap cursor-pointer px-2'>Login</Link>
-                 }
-          <nav className="text-base md:text-lg flex flex-col md:hidden">
-              <Link to={""}>Home</Link>
-              <Link to={"Menu/65a903aff0960881ec4ed356"}>Menu</Link>
-              <Link to={"About"}>About</Link>
-              <Link to={"Contact"}>Contact</Link>
-          </nav>
-                 
-           </div>
+              <div className="absolute right-2 bg-white py-2  shadow drop-shadow-md flex flex-col min-w-[120px] text-center">
+              {
+                userData.email === process.env.REACT_APP_ADMIN_EMAIL && <Link to={"NewProducts"} className='whitespace-nowrap cursor-pointer px-2'>New Product</Link>
+              }
+            
+              {
+                userData.image || userData.firstName ? (
+                  <p className="cursor-pointer text-white px-2 bg-red-500" onClick={handleLogout}>Logout ({userData.firstName || 'User'})</p>
+                ) : (
+                  <Link to={"Login"} className='whitespace-nowrap cursor-pointer px-2'>Login</Link>
+                )
+              }
+            
+              <nav className="text-base md:text-lg flex flex-col md:hidden">
+                <Link to={""}>Home</Link>
+                <Link to={"Menu/65a903aff0960881ec4ed356"}>Menu</Link>
+                <Link to={"About"}>About</Link>
+                <Link to={"Contact"}>Contact</Link>
+              </nav>
+            </div>
+            
             )}
         </div>
           
