@@ -26,13 +26,6 @@ const Home = () => {
   };
 
 
- 
-
-
-  
-
-
-
   return (
     <div className="p-2 md:p-4">
       <div className="md:flex gap-4 py-2">
@@ -46,18 +39,18 @@ const Home = () => {
           </div>
           <h2 className="text-4xl md:text-7xl font-bold py-3">
             The Fasted Delivery in{" "}
-            <span className="text-red-600 text-">Your Home</span>
+            <span className="text-red-600 text-">Your Home</span> 
           </h2>
-          <p className="py-3 text-base ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries
+          <p className="py-3 text-base bg-gray-100">
+           <p className="text-red-600 text text-orange-500"> People who love to eat are always the best people.</p> 
+           <br/>
+            Julia Child would know. The inspiring television chef brought joy and love to 
+            everyone who watched her show. Those who love to eat and also those who love life and are 
+            open to joy and pleasure. That's why it's so important to choose the right caterer for your wedding.
           </p>
-          <button className="font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md">
-            Order Now
-          </button>
+
+
+          <hr className="mt-6 mb-6"/>
         </div>
 
         <div className="md:w-1/2 flex flex-wrap gap-5 p-4 justify-center">
