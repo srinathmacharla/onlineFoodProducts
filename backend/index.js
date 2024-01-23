@@ -63,8 +63,8 @@ app.post("/signup", async (req, res) => {
 //api login
 app.post("/login", async (req, res) => {
     try {
-        const { email } = req.body;
-        const result = await userModel.findOne({ email: email });
+        const { email, password } = req.body;
+        const result = await userModel.findOne({ email: email, password: password });
 
         if (result) {
             const dataSend = {
@@ -77,7 +77,7 @@ app.post("/login", async (req, res) => {
             // console.log(dataSend);
             res.send({ message: "Login is successful", alert: true, data: dataSend });
         } else {
-            res.send({ message: "Email is not available, please sign up", alert: false });
+            res.send({ message: " Your sign-in details are incorrect.", alert: false });
         }
     } catch (error) {
         // console.error(error);
