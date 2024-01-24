@@ -44,8 +44,8 @@ function Header() {
         <nav className="gap-4 md:gap-6 text-base md:text-lg hidden md:flex">
            <Link to={""}>Home</Link>
            {/* <Link to={"Menu/"}>Menu</Link> */}
-           <Link to={"About"}>About</Link>
-           <Link to={"Contact"}>Contact</Link>
+           // <Link to={"About"}>About</Link>
+           <Link to={"Contact"}>Contact Us</Link>
         </nav>
 
         <div className="text-2xl text-slate-600 relative">
@@ -80,7 +80,7 @@ function Header() {
               <nav className="text-base md:text-lg flex flex-col md:hidden">
                 <Link to={""}>Home</Link>
                 <Link to={"Menu/65a903aff0960881ec4ed356"}>Menu</Link>
-                <Link to={"About"}>About</Link>
+                // <Link to={"About"}>About</Link>
                 <Link to={"Contact"}>Contact</Link>
               </nav>
             </div>
