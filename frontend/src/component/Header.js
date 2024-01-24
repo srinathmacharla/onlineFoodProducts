@@ -30,9 +30,14 @@ function Header() {
     <header className='fixed shadow-md w-full h-16 px-2 md:px-4 z-50 bg-white'>
     {/* desktop */}
      <div  className='flex iteam-center h-full justify-between'>
-       <Link to={""}>
+       <Link to={""} className='flex items-center'>
         <div className='h-16'>
             <img src={Mylogo} className='h-full'/>
+          </div>
+          <div className='ml-2'>
+              <span className='cursive-font text-orange-500 text-base md:text-lg font-bold'>Fresh</span>
+              <span className='text-red-500 text-base md:text-lg font-bold'>.</span>
+              <span className='cursive-font text-orange-500 text-base md:text-lg font-bold'>Shopping</span>
           </div>
        </Link>
        <div className="flex items-center gap-4 md:gap-7">
