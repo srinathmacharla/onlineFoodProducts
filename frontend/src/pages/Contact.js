@@ -4,6 +4,7 @@ const Contact = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="max-w-md p-6 border rounded-md shadow-md bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+        <p className="text-lg mb-4">  This is a Demo Application.</p>
         <p className="text-lg mb-4">
           Feel free to reach out to us for any inquiries or feedback.
         </p>
