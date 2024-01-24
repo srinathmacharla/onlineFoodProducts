@@ -32,7 +32,7 @@ const CustomerAdress = () => {
     const receiptId = "qwsaq1";
 
     const paymentHandler = async (e) => {
-      const response = await fetch("http://localhost:8080/order", {
+      const response = await fetch("https://fresh-shopping.onrender.com/order", {
       method: "POST",
       body: JSON.stringify({
         amount,
