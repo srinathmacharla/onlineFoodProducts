@@ -24,7 +24,7 @@ const CustomerAdress = () => {
     0
   );
  
-  const amount = 500;
+  const amount = totalPrice * 100;
   const currency = "INR";
   const receiptId = "qwsaq1";
 
