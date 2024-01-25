@@ -72,7 +72,7 @@ const CustomerAdress = () => {
     prefill: {
       //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
       name: userData.name, //your customer's name
-      email: "webdevmatrix@example.com",
+      email: userData.email,
       contact: userData.phone, //Provide the customer's phone number for better conversion rates
     },
     notes: {
@@ -154,6 +154,15 @@ const onFormChange = (event) => {
                         id="address_line_1"
                         name="address"
                         value={userData.address}
+                        className="mt-1 mb-2 w-full bg-slate-200 px-2 py-1 rounded focus-within:outline-blue-300"
+                      />
+                          
+                      <label htmlFor="Email">Email</label>
+                      <input
+                        type={"Email"}
+                        id="email"
+                        name="email"
+                        value={userData.email}
                         className="mt-1 mb-2 w-full bg-slate-200 px-2 py-1 rounded focus-within:outline-blue-300"
                       />
 
