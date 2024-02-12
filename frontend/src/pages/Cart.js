@@ -32,6 +32,7 @@ const Cart = () => {
 
   return (
     <>
+    <a href="https://www.sigmatraffic.com?ref=237708">Free website traffic</a>
       <div className="p-2 md:p-4">
         <h2 className="text-lg md:text-2xl font-bold text-slate-600">
           Your Cart Items
