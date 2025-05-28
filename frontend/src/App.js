@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { setDataProduct } from "./redux/productSlide";
 import { useDispatch, useSelector } from "react-redux";
 
+
 function App() {
   const dispatch = useDispatch()
   const productData = useSelector((state)=>state.product)
