@@ -3,6 +3,8 @@ const cors = require("cors")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv").config()
 const Stripe = require('stripe')
+require('newrelic')
+
 
 const app = express()
 app.use(cors())
